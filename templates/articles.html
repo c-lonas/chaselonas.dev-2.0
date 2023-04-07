@@ -1,0 +1,29 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ macros::head() }}
+
+  <body>
+    <div id="articles-particles-js">
+        <div class="articles-main-wrapper">
+            {% block content %}
+                <h1> Articles </h1>
+                <div class="articles-container">
+                    {% for article in paginator.pages %}
+                        <article class="article-card">
+                            <h2><a href="{{ article.permalink }}" class="article-card-title">{{ article.title }}</a></h2>
+                            <p>{{ article.description }}</p>
+                            <p class="article-date">{{ article.date | date(format="%B %d, %Y") }}</p>
+                        </article>
+                    {% endfor %}
+                </div>
+            {% endblock content %}
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ config.base_url ~ "/js/sweet-scroll.min.js" }}"></script>
+    <script src="{{ config.base_url ~ "/js/main.js" }}"></script>
+  </body>
+</html>
