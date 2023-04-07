@@ -4,13 +4,14 @@
 <html lang="en">
 
   {{ macros::head() }}
+  {{ macros::header() }}
 
   <body>
     <div id="particles-js">
-        <div class="header">
+        <div class="landing">
             {% block content %}
                 <h1>{{ page.title }}</h1>
-                <div class="content">
+                <div class="articles-content">
                     {{ page.content | safe }}
                 </div>
             {% endblock content %}
