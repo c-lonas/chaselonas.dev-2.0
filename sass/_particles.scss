@@ -1,0 +1,33 @@
+#particles-js {
+  background: $main;
+  position: relative;
+  display: grid;
+  place-items: center; 
+  justify-content: center; 
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .particles-js-canvas-el {
+    width:100% !important;
+    height:100vh !important;
+  }
+}
+
+#particles-js-article-content {
+  background: $main;
+  position: relative;
+  display: grid;
+  place-items: center; 
+  justify-content: center; 
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .particles-js-canvas-el {
+    width:100% !important;
+    height:250vh !important;
+  }
+}

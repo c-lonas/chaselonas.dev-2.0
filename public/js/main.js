@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 new SweetScroll({});
 
+
+// Base particle effect
 particlesJS("particles-js", {
     particles: {
         number: {
@@ -112,6 +114,10 @@ particlesJS("particles-js", {
     },
     retina_detect: true
     })
+    
     }, 
 false
 );
+
+
+

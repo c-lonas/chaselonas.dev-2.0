@@ -5,6 +5,9 @@ description = "A beginner's guide to the Sample Coding Language, featuring code 
 template = "page.html"
 +++
 
+{{ resized_image(path="/public/articles/warm-laptop-edison-bulb.png", width=1050, height=600, alt="warm laptop", class="article-image-main", op="fill", format="auto", quality=75) }}
+
+
 # An Introduction to Sample Coding Language
 
 In this tutorial, we'll be exploring the Sample Coding Language, a popular language used for web development, data analysis, and more. We'll cover some of the basic concepts and provide code examples to help you get started.
@@ -13,11 +16,16 @@ In this tutorial, we'll be exploring the Sample Coding Language, a popular langu
 
 Sample Coding Language has several basic data types, such as integers, floating-point numbers, and strings. Let's see how to declare variables with these data types:
 
-{% highlight sample %}
-integerVar = 42
-floatVar = 3.14
-stringVar = "Hello, World!"
-{% endhighlight %}
+```rust
+let integerVar = 1
+let floatVar = 1.0
+let stringVar = "hello"
+
+
+fn main() {
+    println!("Hello, world!");
+}
+```
 
 
 In this example, we declared three variables: integerVar, floatVar, and stringVar. Each variable holds a different data type.
@@ -27,7 +35,7 @@ In this example, we declared three variables: integerVar, floatVar, and stringVa
 
 Control structures, like conditionals and loops, allow you to control the flow of your code. Here's an example of a simple if statement:
 
-```
+```python
 x = 10
 
 if x > 5:
@@ -42,7 +50,7 @@ This code checks if the value of x is greater than 5. If it is, it prints "x is 
 Functions are reusable pieces of code that can be called with arguments and return a value. Here's a simple function that adds two numbers:
 
 
-```
+```python
 def add_numbers(a, b):
     result = a + b
     return result
