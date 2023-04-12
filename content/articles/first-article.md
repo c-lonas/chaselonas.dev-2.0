@@ -5,7 +5,7 @@ description = "A beginner's guide to the Sample Coding Language, featuring code 
 template = "page.html"
 +++
 
-{{ resized_image(path="/public/articles/warm-laptop-edison-bulb.png", width=1050, height=600, alt="warm laptop", class="article-image-main", op="fill", format="auto", quality=75) }}
+{{ resized_image(path="/public/img/warm-laptop-edison-bulb.png", width=1050, height=600, alt="warm laptop", class="article-image-main", op="fill", format="auto", quality=75) }}
 
 
 # An Introduction to Sample Coding Language
